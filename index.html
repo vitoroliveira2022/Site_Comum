@@ -1,168 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Disciplina Certificadora Comum</title>
-  <style>
-    /* Estilos CSS */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav ul li {
-      margin-right: 10px;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      padding: 5px;
-    }
-
-    .banner {
-      text-align: center;
-      background-color: #f2f2f2;
-      padding: 50px;
-      height: 80vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-    }
-    .conteudo{
-        text-align: left;
-    }
-
-    .banner h1 {
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-
-    .banner p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    .section {
-      text-align: center;
-      padding: 50px;
-      display: flex; 
-      justify-content: center; 
-      gap: 2rem;
-    }
-
-    .section img {
-      width: 200px;
-      height: 200px;
-      margin-bottom: 20px;
-    }
-
-    .section h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    .section p {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-
-    .section button {
-      padding: 10px 20px;
-      font-size: 18px;
-    }
-  </style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de transações em banco de dados</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <header>
     <nav>
       <ul>
-        <li><a href="">Junções</a></li>
-        <li><a href="">Views</a></li>
-        <li><a href="">Funções</a></li>
-        <li><a href="">Procedimentos</a></li>
-        <li><a href="">Triggers</a></li>
-        <li><a href="">Controle de Transações</a></li>
+        <li><a class="header-option" href="#juncoes">Junções</a></li>
+        <li><a class="header-option" href="#views">Views</a></li>
+        <li><a class="header-option" href="#funcoes">Funções</a></li>
+        <li><a class="header-option" href="#procedimentos">Procedimentos</a></li>
+        <li><a class="header-option" href="#triggers">Triggers</a></li>
+        <li><a class="header-option" href="#controle">Controle de Transações</a></li>
       </ul>
     </nav>
   </header>
 
   <div class="banner">
     <h1>Bem-vindo à nossa página!</h1>
-    <p>Conheça sobre temas da matéria de banco de dados II.</p>
-    <button>Começar</button>
+    <p>Conheça temas sobre a matéria de banco de dados II.</p>
+    <a href="#juncoes"><button class="banner-button">Começar</button></a>
   </div>
 
   <div id="juncoes" class="section">
-    <img src="https://solvimm.com/wp-content/uploads/2019/11/Destacada_Qual_tipo_de_Banco_de_Dados_utilizar.png" alt="Imagem 1">
+    <img src="img/juncoes.png" alt="Imagem 1">
     <div class="conteudo">
-        <h2>Junções</h2>
-        <p>Assista o vídeo e saiba mais !</p>  
-        <a href="https://drive.google.com/file/d/1G7R8kX1gynOTAf7L4cdMY6tDRnRMUbUl/view?usp=drivesdk" target="_blank"><button>Ver vídeo</button></a>
+      <h2>Junções</h2>
+      <p style="color: #575757;">Assista o vídeo e saiba mais.</p>
+      <a href="https://drive.google.com/file/d/1G7R8kX1gynOTAf7L4cdMY6tDRnRMUbUl/view?usp=drivesdk" target="_blank"><button class="button-video">Ver vídeo</button></a>
     </div>
   </div>
 
-  <div id="views" class="section">
-    <img src="https://www.impacta.com.br/blog/wp-content/uploads/2020/04/header_banco_de_dados_sql.jpg" alt="Imagem 2">
+  <div id="views" class="section" style="background-color: #efefef;">
+    <img src="img/view.png" alt="Imagem 2">
     <div class="conteudo">
-        <h2>Views</h2>
-        <p>Assista o vídeo e saiba mais !</p>  
-        <a href="https://drive.google.com/file/d/1l7awCBMW7vkf0XIijB0LDU7eY8jMZhKT/view" target="_blank"><button>Ver vídeo</button></a>
+      <h2>Views</h2>
+      <p style="color: #575757;">Assista o vídeo e saiba mais.</p>
+      <a href="https://drive.google.com/file/d/1l7awCBMW7vkf0XIijB0LDU7eY8jMZhKT/view" target="_blank"><button class="button-video">Ver vídeo</button></a>
     </div>
   </div>
 
   <div id="funcoes" class="section">
-    <img src="imagem3.jpg" alt="Imagem 3">
+    <img src="img/funcoes.png" alt="Imagem 3">
     <div class="conteudo">
-        <h2>Funções</h2>
-        <p>Assista o vídeo e saiba mais !</p>  
-        <a href="https://drive.google.com/file/d/1KPNKAjeJa6W1a7U0kSyN2fvWH63BikUb/view?usp=drive_link" target="_blank"><button>Ver vídeo</button></a>
+      <h2>Funções</h2>
+      <p style="color: #575757;">Assista o vídeo e saiba mais.</p>
+      <a href="https://drive.google.com/file/d/1KPNKAjeJa6W1a7U0kSyN2fvWH63BikUb/view?usp=drive_link" target="_blank"><button class="button-video">Ver vídeo</button></a>
     </div>
   </div>
 
-  <div id="procedimentos" class="section">
-    <img src="imagem3.jpg" alt="Imagem 3">
+  <div id="procedimentos" class="section" style="background-color: #efefef;">
+    <img src="img/procedimentos.png" alt="Imagem 4">
     <div class="conteudo">
-        <h2>Procedimentos</h2>
-        <p>Assista o vídeo e saiba mais !</p>  
-        <a href="https://drive.google.com/file/d/1825KpiibdCvk34N-NgA2VsWIJLyePRFK/view?usp=drive_link" target="_blank"><button>Ver vídeo</button></a>
+      <h2>Procedimentos</h2>
+      <p style="color: #575757;">Assista o vídeo e saiba mais.</p>
+      <a href="https://drive.google.com/file/d/1825KpiibdCvk34N-NgA2VsWIJLyePRFK/view?usp=drive_link" target="_blank"><button class="button-video">Ver vídeo</button></a>
     </div>
   </div>
 
   <div id="triggers" class="section">
-    <img src="imagem3.jpg" alt="Imagem 3">
+    <img src="img/triggers.png" alt="Imagem 3">
     <div class="conteudo">
-        <h2>Triggers</h2>
-        <p>Assista o vídeo e saiba mais !</p>  
-        <a href="" target="_blank"></a><button>Ver vídeo</button>
+      <h2>Triggers</h2>
+      <p style="color: #575757;">Assista o vídeo e saiba mais.</p>
+      <a href="https://drive.google.com/file/d/1kBiPnie2Qh1EiAI517WRyMkSQMtjK2jw/view?usp=share_link" target="_blank"><button class="button-video">Ver vídeo</button></a>
     </div>
   </div>
 
-  <div id="controle_transacoes" class="section">
-    <img src="imagem3.jpg" alt="Imagem 3">
+  <div id="controle" class="section" style="background-color: #efefef;">
+    <img src="img/controle.png" alt="Imagem 3">
     <div class="conteudo">
-        <h2>Controle de transações</h2>
-        <p>Assista o vídeo e saiba mais !</p>        
-        <a href="https://drive.google.com/file/d/1pGad3xMqKDTvNaWNCOLm_tapGsBVQJQs/view" target="_blank"><button>Ver vídeo</button></a>
+      <h2>Controle de transações</h2>
+      <p style="color: #575757;">Assista o vídeo e saiba mais.</p>
+      <a href="https://drive.google.com/file/d/1pGad3xMqKDTvNaWNCOLm_tapGsBVQJQs/view" target="_blank"><button class="button-video">Ver vídeo</button></a>
     </div>
   </div>
+
+  </div>
+
 </body>
+
 </html>
-
-
